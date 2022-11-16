@@ -9,6 +9,9 @@ public class snack7 {
 			Sentence += words[i];
 		}
 		System.out.println(Sentence);
+		StringBuilder strb = new StringBuilder(Sentence);
+		Sentence = strb.reverse().toString();
+		System.out.println(Sentence);
 	}
 
 }
