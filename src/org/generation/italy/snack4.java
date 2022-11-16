@@ -14,11 +14,9 @@ public class snack4 {
 		
 		
 		
-		if(FirstArray.length > SecondArray.length) {
-		int diff = FirstArrayLength - SecondArray.length;
-		}
-		else if(SecondArray.length>FirstArray.length) {
-			int diff = SecondArrayLength - FirstArray.length;
+		for(int i =0;i< SecondArrayLength - FirstArrayLength;i++ ) {
+			int number = rnd.nextInt(1001);
+			System.out.println(number);
 		}
 	
 }}
