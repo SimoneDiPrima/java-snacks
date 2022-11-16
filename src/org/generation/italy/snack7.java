@@ -6,13 +6,21 @@ public class snack7 {
 		String[] words = { "Lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipisicing", "elit" };
 		String Sentence = "";
 		String maxSentence = "";
+		String minSentence = "";
+		
 		for(int i =0;i<words.length;i++) {
+			
 			Sentence += words[i];
 			if(words[i].length()>maxSentence.length()) {
 				maxSentence = words[i];
 			}
+			if(words[i].length()>minSentence.length()) {
+				minSentence = words[i];
+				if(minSentence.length() == words[i]) {
+					
+				}
+			}
 			
-		}
 		System.out.println(Sentence);
 		StringBuilder strb = new StringBuilder(Sentence);
 		Sentence = strb.reverse().toString();
