@@ -6,7 +6,7 @@ public class snack7 {
 		String[] words = { "Lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipisicing", "elit" };
 		String Sentence = "";
 		String maxSentence = "";
-		String minSentence = "";
+		String minSentence = words[0];
 		
 		for(int i =0;i<words.length;i++) {
 			
@@ -14,19 +14,18 @@ public class snack7 {
 			if(words[i].length()>maxSentence.length()) {
 				maxSentence = words[i];
 			}
-			if(words[i].length()>minSentence.length()) {
+			if(words[i].length()<minSentence.length()) {
 				minSentence = words[i];
-				if(minSentence.length() == words[i]) {
-					
-				}
+				
 			}
-			
+		}
 		System.out.println(Sentence);
 		StringBuilder strb = new StringBuilder(Sentence);
 		Sentence = strb.reverse().toString();
 		System.out.println(Sentence);
 		System.out.println("la parola piu lunga è " + maxSentence);
+		System.out.println("la parola piu corta è " + minSentence);
 		
-	}
+	
 
-}
+}}
